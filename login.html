@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in | TikTok</title>
+    <link rel="icon" href="img/TikTok_icon.png">
+    <link rel="stylesheet" href="loginStyle.css">
+</head>
+<body>
+    <div class="header">
+        <div class="headboxlogo">
+            <a href=""><img class="TikToklogo" src="img/TikTok_logo.jpg" alt="TikTok Logo"></a>
+        </div>
+        <div class="headboxhelp">
+            <div class="help_icon">
+                <img src="img/help_icon.png" alt="Help Icon">
+            </div>
+            <a class="helptext" href="">Feedback and help</a>
+        </div>
+    </div>
+
+    <div class="logincenter">
+        <div class="loginbox">
+            <div class="loginhad">
+                <p class="logintext">Log in with email</p>
+            </div>
+            <div class="loginform">
+                <div class="inputgroup">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="inputgroup">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn" onclick="login()">Log in</button>
+            </div>
+        </div>
+
+        <div class="logintermsbox">
+            <div class="logintermstext">
+                <span>By continuing, you agree to TikTok’s <a href="">Terms of Service</a> and</span>
+            </div>
+            <div class="logintermstext">
+                <span>confirm that you have read TikTok’s <a href="">Privacy Policy</a>.</span>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="signin">
+        <p>Don’t have an account? <a href="">Sign up</a></p>
+    </div>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="loginScript.js"></script>
+</body>
+</html>
